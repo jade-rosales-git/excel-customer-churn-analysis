@@ -14,8 +14,8 @@ Maven Analytics "Telecom Customer Churn": 7,043 customers of a fictional Califor
 
 ## Method
 
-- Checked for duplicates (none) and missing values. Filled blank service fields with "No Phone Service", "No Internet" and "Not churned" so they can be grouped.
-- Added a `Churned` flag and a `High Value` flag (top 25% of customers by monthly charge, $89.75 or more).
+- Checked for duplicates (none) and missing values. Filled blank fields following the data dictionary provided with the dataset (for example "No" where a customer doesn't have a service, and "Not churned" for churn category and reason), so they can be grouped.
+- Added two helper columns: `Churned` (1 if the customer churned, 0 if not) and `High-value Customers` (marks the top 25% of customers by monthly charge, $89.75 or more).
 - Built PivotTables and PivotCharts for churn reasons, contract, tenure, age, internet type, city and high-value customers, then combined them into a one-page dashboard.
 
 ## Key findings
